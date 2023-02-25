@@ -6,13 +6,6 @@ import { ScrollView } from 'react-native';
 import { Button } from '../../components/Button'
 
 
-const MainLogo = require('../../icons/main_logo.png')
-const ProfileIcon = require('../../icons/person.png')
-const BarcodeIcon = require('../../icons/upc-scan.png')
-const DraftIcon = require('../../icons/draft.png')
-const HistoryIcon = require('../../icons/history.png')
-const PhoneIcon = require('../../icons/phone.png')
-const EnvelopeIcon = require('../../icons/envelope.png')
 const TrashIcon = require('../../icons/trash.png')
 
 
@@ -129,6 +122,8 @@ const styles = StyleSheet.create({
     },
     buttonContainer:{
         width:'70%',
+        backgroundColor: variables.utilityColor,
+        borderRadius: 12,
     },
     imageContainer:{
         height: 40,

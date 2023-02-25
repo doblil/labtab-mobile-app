@@ -5,6 +5,9 @@ import { useSelector } from 'react-redux';
 import { variables } from '../styles/variables';
 import { Actions } from './actions';
 import { AuthScreen } from './authScreen/authScreen';
+import { Description } from './description/description';
+import { FlowForm } from './description/flowForm';
+import { DescriptionColumn } from './descriptionColumn/descriptionColumn';
 import { DraftScreen } from './draftsScreen/draftScreen';
 import { HistoryScreen } from './historyScreen/historyScreen';
 import { HomeScreen } from './homeScreen/homeScreen';
@@ -22,12 +25,16 @@ const {isAuth, token} = useSelector(state => state.auth);
     "auth": <AuthScreen/>,
     "history":<HistoryScreen/>,
     "scanner": <Scanner/>,
-    "draft": <DraftScreen/>
+    "draft": <DraftScreen/>,
+    "description": <Description/>
   }
 
     return(
        <View style = {styles.container}>
-            {router[currentRoute]}
+            {/* <Description/> */}
+            {/* <DescriptionColumn/> */}
+            <FlowForm/>
+            {/* {router[currentRoute]} */}
             <Actions setCurrentRoute={setCurrentRoute} currentRoute ={currentRoute}/>
             <StatusBar style="auto" />
        </View>

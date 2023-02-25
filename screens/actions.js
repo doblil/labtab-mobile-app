@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, TextInput, StyleSheet, Image,  TouchableNativeFeedback, TouchableNativeFeedbackComponentComponent } from 'react-native';
+import { View, TextInput, StyleSheet, Image,  TouchableHighlight , TouchableNativeFeedbackComponentComponent } from 'react-native';
 import { variables } from '../styles/variables';
 
 
@@ -21,29 +21,29 @@ export const Actions = (props) => {
 
     return(
         <View style={styles.actions}>
-            <  TouchableNativeFeedback onPress = { () => {setCurrentRoute('home')} }>
+            <  TouchableHighlight   style ={{width:70}} onPress = { () => {setCurrentRoute('home')} }>
                 <View   style={handleStyle('home')}>
                     <Image source={ProfileIcon} style={styles.image} />
                 </View>
-            </  TouchableNativeFeedback>
+            </  TouchableHighlight >
             
-            <  TouchableNativeFeedback onPress = { () => {setCurrentRoute('draft')} }>
+            <  TouchableHighlight   style ={{width:70}} onPress = { () => {setCurrentRoute('draft')} }>
                 <View   style={{...handleStyle('draft'), paddingLeft: 7}}>
                     <Image source={DraftIcon} style={styles.image} />
                 </View>
-            </  TouchableNativeFeedback>
+            </  TouchableHighlight >
             
-            <  TouchableNativeFeedback onPress = { () => {setCurrentRoute('history')} }>
+            <  TouchableHighlight   style ={{width:70}} onPress = { () => {setCurrentRoute('history')} }>
                 <View   style={handleStyle('history')}>
                     <Image source={HistoryIcon} style={styles.image} />
                 </View>
-            </  TouchableNativeFeedback>
+            </  TouchableHighlight >
             
-            <  TouchableNativeFeedback onPress = { () => {setCurrentRoute('scanner')} }>
+            <  TouchableHighlight   style ={{width:70}} onPress = { () => {setCurrentRoute('scanner')} }>
                 <View  style={handleStyle('scanner')}>
                     <Image source={BarcodeIcon} style={styles.image} />
                 </View>
-            </  TouchableNativeFeedback>
+            </  TouchableHighlight >
 
         </View>
 
