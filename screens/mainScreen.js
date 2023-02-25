@@ -11,7 +11,7 @@ import { DescriptionColumn } from './descriptionColumn/descriptionColumn';
 import { DraftScreen } from './draftsScreen/draftScreen';
 import { HistoryScreen } from './historyScreen/historyScreen';
 import { HomeScreen } from './homeScreen/homeScreen';
-import Scanner from './Scanner/scanner';
+import { Scanner } from './Scanner/scanner';
 
 export const MainScreen = () => {
 

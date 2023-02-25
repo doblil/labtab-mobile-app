@@ -1,1 +1,1 @@
-export const ReagentDescr = () => {}
+export const ReagentDescr = () => { return }
