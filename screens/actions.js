@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, TextInput, StyleSheet, Image,  TouchableHighlight , TouchableNativeFeedbackComponentComponent } from 'react-native';
+import { View, TextInput, StyleSheet, Image,  TouchableOpacity , TouchableNativeFeedbackComponentCom, TouchableOpacityponent } from 'react-native';
 import { variables } from '../styles/variables';
 
 
@@ -19,31 +19,32 @@ export const Actions = (props) => {
         return styles.imageContainer
     }
 
+    const hitSlop = {top: 10, bottom: 10, left: 10, right: 10}
     return(
         <View style={styles.actions}>
-            <  TouchableHighlight   style ={{width:70}} onPress = { () => {setCurrentRoute('home')} }>
+            <  TouchableOpacity   hitSlop={hitSlop} onPress = { () => {setCurrentRoute('home')} }>
                 <View   style={handleStyle('home')}>
                     <Image source={ProfileIcon} style={styles.image} />
                 </View>
-            </  TouchableHighlight >
+            </  TouchableOpacity >
             
-            <  TouchableHighlight   style ={{width:70}} onPress = { () => {setCurrentRoute('draft')} }>
+            <  TouchableOpacity   hitSlop={hitSlop} onPress = { () => {setCurrentRoute('draft')} }>
                 <View   style={{...handleStyle('draft'), paddingLeft: 7}}>
                     <Image source={DraftIcon} style={styles.image} />
                 </View>
-            </  TouchableHighlight >
+            </  TouchableOpacity >
             
-            <  TouchableHighlight   style ={{width:70}} onPress = { () => {setCurrentRoute('history')} }>
+            <  TouchableOpacity   hitSlop={hitSlop} onPress = { () => {setCurrentRoute('history')} }>
                 <View   style={handleStyle('history')}>
                     <Image source={HistoryIcon} style={styles.image} />
                 </View>
-            </  TouchableHighlight >
+            </  TouchableOpacity >
             
-            <  TouchableHighlight   style ={{width:70}} onPress = { () => {setCurrentRoute('scanner')} }>
+            <  TouchableOpacity   hitSlop={hitSlop} onPress = { () => {setCurrentRoute('scanner')} }>
                 <View  style={handleStyle('scanner')}>
                     <Image source={BarcodeIcon} style={styles.image} />
                 </View>
-            </  TouchableHighlight >
+            </  TouchableOpacity >
 
         </View>
 

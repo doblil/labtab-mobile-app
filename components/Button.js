@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'row',
-    backgroundColor: 'transparent',
+    backgroundColor: 'inherite',
   },
   buttonLabel: {
     color: '#fff',

@@ -57,6 +57,10 @@ export const FlowForm = () => {
                     <Text style={styles.destination}>Дата</Text>
                     <Text style={{...styles.destination, width: '70%', color:variables.utilityColor}}>25.02.2023 23:47</Text>
                 </View>
+                <View style={styles.wrap}>
+                    <View style={{...styles.buttonContainer, backgroundColor:'gray'}}><Button label="В черновик"/></View>
+                    <View style={styles.buttonContainer}><Button label="Списать" /></View>
+                </View>
 
             </View>
 
@@ -84,7 +88,7 @@ const styles = StyleSheet.create({
     title:{
         textAlign:'center',
         fontSize: 17,
-        marginTop:15,
+        marginTop:10,
         marginBottom:15,
     },
     destination:{
@@ -114,21 +118,9 @@ const styles = StyleSheet.create({
         alignItems:'center',
         justifyContent:'space-between'
     },
-    box:{
-        position:'relative',
-        width:'48%',
-        height:90,
-        borderColor:'white',
-        borderWidth: 1,
-        borderRadius: 18,
-        padding:15,
-        paddingTop:6,
-        marginBottom:15,
-        alignItems:'center',
-        justifyContent:'center',
-    },
+
     buttonContainer:{
-        width:'100%',
+        width:'47%',
         marginTop:17,
         backgroundColor: variables.fondColor,
         borderRadius: 15,
